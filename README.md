@@ -1,4 +1,5 @@
 
+vim -p README.md Cargo.toml ./src/main.rs
 
 apt-get install rustc
 apt-get install cargo
@@ -11,6 +12,7 @@ Hello World!
 
 
 ----
+
 
 iron 
   - drag- and drop, no middleware router, but plugable,
