@@ -1,4 +1,5 @@
 
+```
 vim -p README.md Cargo.toml ./src/main.rs
 
 apt-get install rustc
@@ -9,6 +10,7 @@ cargo build
 
 ./target/debug/my-demo 
 Hello World!
+```
 
 
 ----
