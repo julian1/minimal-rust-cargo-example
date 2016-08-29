@@ -57,3 +57,15 @@ Note, the ability to put explicit git dependencies,
 [dependencies]
 rand = { git = "https://github.com/rust-lang-nursery/rand.git", rev = "9f35b8e" }
 ```
+
+
+
+
+#### Vim
+
+git clone https://github.com/rust-lang/rust.vim
+ln -s /home/meteo/rust.vim/indent/rust.vim /usr/share/vim/vim74/indent/
+ln -s /home/meteo/rust.vim/syntax/rust.vim /usr/share/vim/vim74/syntax/
+
+:setf rust
+
