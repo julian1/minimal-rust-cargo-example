@@ -1,0 +1,11 @@
+
+[package]
+
+name = "my-demo"
+version = "0.0.1"
+authors = ["Your Name <your.name@somewhere.com>"]
+
+
+[dependencies]
+nickel = "*"
+
