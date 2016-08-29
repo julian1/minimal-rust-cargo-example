@@ -7,8 +7,8 @@ apt-get install cargo
 
 cargo clean
 cargo build
+cargo run
 
-./target/debug/my-demo 
 Hello World!
 ```
 
