@@ -6,6 +6,10 @@ version = "0.0.1"
 authors = ["Your Name <your.name@somewhere.com>"]
 
 
-[dependencies]
-nickel = "*"
+[dependencies.iron]
+version = "*"
+
+
+[dependencies.router]
+version = "*"
 

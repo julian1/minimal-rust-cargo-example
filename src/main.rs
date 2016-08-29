@@ -1,9 +1,22 @@
 
+extern crate iron;
+extern crate router;
 
-// This is the main function
+use iron::prelude::*;
+use iron::status;
+use router::Router;
+
 fn main() {
-    // The statements here will be executed when the compiled binary is called
+    let mut router = Router::new();  // Alternative syntax:
+    router.get("/", handler);        // let router = router!(get "/" => handler,
+    router.get("/:query", handler);  //                      get "/:query" => handler);
 
-    // Print text to the console
-    println!("Hello World!");
+    Iron::new(router).http("localhost:3000").unwrap();
+
+    fn handler(req: &mut Request) -> IronResult<Response> {
+        let ref query = req.extensions.get::<Router>().unwrap().find("query").unwrap_or("/");
+        Ok(Response::with((status::Ok, *query)))
+    }
 }
+ 
+

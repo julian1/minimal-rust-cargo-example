@@ -34,6 +34,22 @@ cargo search iron
 #### resources
 
 http://doc.crates.io/guide.html
+https://github.com/redox-os/redox
+https://www.reddit.com/r/rust/comments/4gor9j/is_rust_web_ready_yet_iron_and_nickel_for/
+https://github.com/flosse/rust-web-framework-comparison
+
+
+https://github.com/iron/iron/                            240 forks
+https://github.com/nickel-org/nickel.rs/                 123 forks
+
+iron router,
+https://github.com/iron/router
+
+static file,
+https://github.com/iron/staticfile
+
+
+Think of hyper as libhttp (just unofficially). Iron and Nickel both use it to handle the server protocol. 
 
 ```
 Note, the ability to put explicit git dependencies,
