@@ -35,4 +35,9 @@ cargo search iron
 
 http://doc.crates.io/guide.html
 
+```
+Note, the ability to put explicit git dependencies,
 
+[dependencies]
+rand = { git = "https://github.com/rust-lang-nursery/rand.git", rev = "9f35b8e" }
+```
