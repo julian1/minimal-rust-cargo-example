@@ -10,6 +10,12 @@ cargo build
 cargo run
 
 Hello World!
+
+cargo build --release
+
+ ./target/release/my-demo
+Hello World!
+
 ```
 
 
@@ -24,4 +30,9 @@ nickle.rs
 
 
 cargo search iron
+
+#### resources
+
+http://doc.crates.io/guide.html
+
 
