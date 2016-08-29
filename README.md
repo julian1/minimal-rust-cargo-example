@@ -59,7 +59,9 @@ rand = { git = "https://github.com/rust-lang-nursery/rand.git", rev = "9f35b8e" 
 ```
 
 
+####  functional
 
+https://mmstick.gitbooks.io/rust-programming-phoronix-reader-how-to/content/chapter02.html
 
 #### Vim
 
