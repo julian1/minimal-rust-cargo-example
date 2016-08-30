@@ -8,7 +8,7 @@ use router::Router;
 
 fn main() {
     let mut router = Router::new();         // Alternative syntax:
-    router.get("/", handler);               // let router = router!(get "/" => handler,
+//    router.get("/", handler);               // let router = router!(get "/" => handler,
     router.get("/:query", handler);         // get "/:query" => handler);
     router.get("/hello", hello);            // get "/:query" => handler);
 
@@ -19,7 +19,7 @@ fn main() {
         Ok(Response::with((status::Ok, *query)))
     }
 
-    fn hello(req: &mut Request) -> IronResult<Response> {
+    fn hello(_: &mut Request) -> IronResult<Response> {
         Ok(Response::with((status::Ok, "Whoot!" )))
     }
 
